@@ -69,6 +69,18 @@ var schema = new Schema({
         type: String,
         default: "User",
         enum: ['User', 'Admin']
+    },
+    expiry: {
+        type: date,
+        default: ""
+    },
+    status: {
+        type: date,
+        default: "User",
+        enum: ['User', 'Admin']
+    },
+    creditsRemaining: {
+        type: number,
     }
 });
 
